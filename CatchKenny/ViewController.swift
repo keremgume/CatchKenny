@@ -114,7 +114,7 @@ class ViewController: UIViewController {
         kennyImage.isHidden = true
     }
     
-    
+    // create a random place for kenny to appear
     @objc func kennyRandomPlace() {
         let kennyPositionX: Int
         var kennyPositionY: Int
