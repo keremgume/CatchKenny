@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CatchKenny" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H1A-0w-j92">
+                                <rect key="frame" x="180.5" y="74" width="53" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="rXf-cg-SKV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IoD-VA-wZn">
+                                <rect key="frame" x="157" y="154" width="100" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="A60-oV-SHg"/>
+                                    <constraint firstAttribute="height" constant="50" id="eAf-yP-G97"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="High Score: 100" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ery-JT-DAE">
+                                <rect key="frame" x="142" y="816" width="130" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="130" id="EzV-Sz-7I8"/>
+                                    <constraint firstAttribute="height" constant="50" id="aVt-Ut-ede"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kenny" translatesAutoresizingMaskIntoConstraints="NO" id="geI-1T-QwU">
+                                <rect key="frame" x="157" y="398" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="H1A-0w-j92" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="3qh-VD-d2C"/>
+                            <constraint firstItem="Ery-JT-DAE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Fte-OM-5XV"/>
+                            <constraint firstItem="H1A-0w-j92" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="g3z-20-kcA"/>
+                            <constraint firstAttribute="bottom" secondItem="Ery-JT-DAE" secondAttribute="bottom" constant="30" id="h7W-zF-RGd"/>
+                            <constraint firstItem="IoD-VA-wZn" firstAttribute="top" secondItem="H1A-0w-j92" secondAttribute="bottom" constant="30" id="vDZ-GM-jfY"/>
+                            <constraint firstItem="IoD-VA-wZn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zxI-fK-OTW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="highScoreLabel" destination="Ery-JT-DAE" id="moc-NV-4hg"/>
+                        <outlet property="kennyImage" destination="geI-1T-QwU" id="aX7-au-o9q"/>
+                        <outlet property="scoreLabel" destination="IoD-VA-wZn" id="TYc-aL-nO9"/>
+                        <outlet property="timerLabel" destination="H1A-0w-j92" id="8pt-YC-WEG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="118.52678571428571"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="kenny" width="170" height="230"/>
+    </resources>
+</document>
